@@ -102,4 +102,4 @@ async def amountpeople(ctx):
 
 
 
-bot.run("MTE2NTI1MTQ2OTg4OTUyMzc1Mg.GjGsCs.zXk5SqWy2fSb70R1DSf2f3womQlb5ABT-7dXaw")
+bot.run("TOKEN")
