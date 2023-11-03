@@ -63,41 +63,32 @@ async def rps(ctx):
     comp_choice = random.choice(rpsGame)
     if user_choice == 'rock':
         if comp_choice == 'rock':
-            await ctx.send(f'Well, that was weird. We tied.\nYour choice: {user_choice}\nMy choice: {comp_choice}')
+            await ctx.send(f'Отлично, у нас ничья!\nТвой выбор: {user_choice}\nМой выбор: {comp_choice}')
         elif comp_choice == 'paper':
-            await ctx.send(f'Nice try, but I won that time!!\nYour choice: {user_choice}\nMy choice: {comp_choice}')
+            await ctx.send(f'Хорошая попытка, но я выйграл!\nТвой выбор: {user_choice}\nМой выбор: {comp_choice}')
         elif comp_choice == 'scissors':
-            await ctx.send(f"Aw, you beat me. It won't happen again!\nYour choice: {user_choice}\nMy choice: {comp_choice}")
+            await ctx.send(f"О нет, ты победил меня!!\nТвой выбор: {user_choice}\nМой выбор: {comp_choice}")
 
     elif user_choice == 'paper':
         if comp_choice == 'rock':
-            await ctx.send(f'The pen beats the sword? More like the paper beats the rock!!\nYour choice: {user_choice}\nMy choice: {comp_choice}')
+            await ctx.send(f'Перо побеждает меч? Больше похоже на то, что бумага бьет камень!!\nТвой выбор: {user_choice}\nМой выбор: {comp_choice}')
         elif comp_choice == 'paper':
-            await ctx.send(f'Oh, wacky. We just tied. I call a rematch!!\nYour choice: {user_choice}\nMy choice: {comp_choice}')
+            await ctx.send(f'О нет, у нас ничья. Я требую реванш!\nТвой выбор: {user_choice}\nМой выбор: {comp_choice}')
         elif comp_choice == 'scissors':
-            await ctx.send(f"Aw man, you actually managed to beat me.\nYour choice: {user_choice}\nMy choice: {comp_choice}")
+            await ctx.send(f"О да, я порезал тебя на кусочки!\nТвой выбор: {user_choice}\nМой выбор: {comp_choice}")
 
     elif user_choice == 'scissors':
         if comp_choice == 'rock':
-            await ctx.send(f'HAHA!! I JUST CRUSHED YOU!! I rock!!\nYour choice: {user_choice}\nMy choice: {comp_choice}')
+            await ctx.send(f'ХАХА, я сломал твои ножницы, у меня камень!\nYour choice: {user_choice}\nMy choice: {comp_choice}')
         elif comp_choice == 'paper':
-            await ctx.send(f'Bruh. >: |\nYour choice: {user_choice}\nMy choice: {comp_choice}')
+            await ctx.send(f'Блин, ты порезал меня :< \nYour choice: {user_choice}\nMy choice: {comp_choice}')
         elif comp_choice == 'scissors':
-            await ctx.send(f"Oh well, we tied.\nYour choice: {user_choice}\nMy choice: {comp_choice}")
+            await ctx.send(f"Не так хорошо, но у нас ничья!\nYour choice: {user_choice}\nMy choice: {comp_choice}")
 
 @bot.command()
 async def procent(ctx):
-    await ctx.send('Примерно процент рагрязнения окружающей среды 90%')
+    await ctx.send('Шесть миллиардов жителей планеты, треть которых – дети, дышат загрязненным воздухом, что создает угрозу их здоровью и даже жизни. Примерно процент рагрязнения окружающей среды 90% и этим воздухом дышат все живые организмы!')
 
-
-@bot.command()
-async def procentair(ctx):
-    await ctx.send('На сегодняшний день более 90 процентов людей во всем мире дышат воздухом, уровень загрязнения которого превышает допустимые нормы.')
-
-
-@bot.command()
-async def amountpeople(ctx):
-    await ctx.send('Шесть миллиардов жителей планеты, треть которых – дети, дышат загрязненным воздухом, что создает угрозу их здоровью и даже жизни.') 
 
 
 
